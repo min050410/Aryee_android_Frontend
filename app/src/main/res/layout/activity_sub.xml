@@ -5,15 +5,99 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".SubActivity">
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="설정"
-        android:textStyle="bold"
 
-        android:textSize="40sp"/>
+        android:text="설정"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+    <View
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+    />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="계정"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+        <ImageButton
+            android:id="@+id/imagebutton"
+            android:layout_width="433dp"
+            android:layout_height="65dp"
+
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/test" />
+        <ImageButton
+            android:id="@+id/imagebutton3"
+            android:layout_width="433dp"
+            android:layout_height="65dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/test" />
+        <ImageButton
+            android:id="@+id/imagebutton4"
+            android:layout_width="433dp"
+            android:layout_height="65dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/test" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="350dp"
+        android:orientation="vertical">
+    <View
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="5dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background ="@color/white"
+            app:srcCompat="@drawable/task" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="5dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background ="@color/white"
+            app:srcCompat="@drawable/calinder" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="5dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            app:srcCompat="@drawable/setting" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
+
+
